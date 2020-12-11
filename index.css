@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "PokemonGB";
+  src: url("./assets/PokemonGb-RAeo.ttf");
+  }
+
+html {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100%;
+}
+
+body {
+  /* background-color: #92DA75; */
+  background: linear-gradient(#92DA75, #2D593E);
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #312F97;
+}
+
+#logo {
+  margin: auto;
+  width: 300px;
+}
+
+#interface {
+  display: block;
+  margin-top: 10vh;
+  height: auto;
+  /* width: 80%; */
+  min-width: 375px;
+  margin: auto;
+}
+
+#logo img {
+  object-fit: cover;
+  /* width: 100%; */
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5em;
+  line-height: 1;
+}
+form {
+  text-align: center;
+  line-height: 1.5;
+  font-size: .8em;
+  
+}
+input, #submit {
+  border: 4px solid #312F97;
+  background-color: #312F97;
+  color: #FFCE31;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+#error_message {
+  display: none;
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 50%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+
+  transform: translate(-50%, -50%);
+  /* min-width: auto;
+  min-height: auto; */
+  background: lightgray;
+  color: black;
+  /* top: 30%; */
+  margin: auto;
+  padding: 20px;
+  border: 10px ridge darkgray;
+  font-family: "PokemonGB", monospace;
+  text-align: center;
+  z-index: 2;
+}
+
+#pokemon_box {
+  width: 80%;
+  min-height: 415px;
+  min-width: 355px;
+  /* height: 415px; */
+  border: 10px ridge #312F97;
+  border-radius: 8px;
+  background-color: white;
+  margin: 30px auto 20px auto;
+  /* background: url("https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/masters/forest.jpg"); */
+  background: url("./assets/forrestBackground.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+#pokemon {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  padding-top:100px;
+}
+
+#pokemon span {
+  font-size: .8em;
+  text-align: center;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+#pokemon img {
+  display: block;
+  margin: auto;
+}
+
+#pokemon_text {
+  display:none;
+  margin: auto;
+  width: auto;
+  padding: 5px 0px 5px 0px;
+  min-height: 25px;
+  text-align: center;
+  font-family: "PokemonGB", monospace;
+  font-size: .9em;
+  color: white;
+  background-color: rgba(0,0,0,.3);
+}
+
+#bye_message {
+  display: none;
+  position: relative;
+  bottom: 0px;
+  margin: auto;
+  /* height: auto; */
+  height: 50px;
+  font-family: "PokemonGB", monospace;
+  font-size: .8em;
+  text-align: center;
+  padding: 4px 4px 4px 4px;
+  color:white;
+  /* border: 10px ridge #312F97;
+  border-width: 10px 0px 0px 0px; */
+  background-color: rgba(0,0,0,.3);
+  /* bottom: 0px; */
+}

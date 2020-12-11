@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Pokedex</title>
+</head>
+<body>
+  <div id="interface">
+    <div id="logo">
+      <img src="./assets/pokedex.png" alt="Pokedex"><br>
+    </div>
+    <form>
+    <h1>Search for a Pokemon name or number to add them to your party!</h1>
+    <!-- <h1>What Pokemon would you like to see?</h1> -->
+    
+      <!-- <label>Search for a Pokemon name or Pokedex number:<br> --><label>
+        <input type="text" class="search" placeholder="try snorlax or 143"></label><br>
+      <button id="submit" type="submit">Search</button>
+    </form>
+  </div>
+
+  
+
+  <div id="pokemon_box">
+    <div id="pokemon_text"></div>
+    <div id="pokemon"></div>
+    <div id="bye_message"></div>
+    <div id="error_message"></div>
+  </div>
+    
+  <script src="./index.js"></script>
+</body>
+</html>
